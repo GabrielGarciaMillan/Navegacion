@@ -53,8 +53,11 @@ class SecondScreen : Fragment() {
         }
         binding.bPantalla32.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_from2_to_3,bundle))
        */
+
+
         val action = SecondScreenDirections.actionFrom2To3("la segunda pantalla")
         binding.bPantalla32.setOnClickListener(Navigation.createNavigateOnClickListener(action))
+
     }
     companion object {
         /**

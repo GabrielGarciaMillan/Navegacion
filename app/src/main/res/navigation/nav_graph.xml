@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/hostFragment"
         android:name="com.example.navegacion.HostFragment"
-        android:label="fragment_host"
-        tools:layout="@layout/fragment_host" >
+        android:label="Host Fragment"
+        tools:layout="@layout/fragment_host">
         <action
             android:id="@+id/action_fromhost_to_1"
             app:destination="@id/firstScreen"
@@ -32,13 +32,13 @@
     <fragment
         android:id="@+id/firstScreen"
         android:name="com.example.navegacion.FirstScreen"
-        android:label="fragment_first_screen"
+        android:label="First Screen"
         tools:layout="@layout/fragment_first_screen" />
     <fragment
         android:id="@+id/secondScreen"
         android:name="com.example.navegacion.SecondScreen"
-        android:label="fragment_second_screen"
-        tools:layout="@layout/fragment_second_screen" >
+        android:label="Second Screen"
+        tools:layout="@layout/fragment_second_screen">
         <action
             android:id="@+id/action_from2_to_3"
             app:destination="@id/thirdScreen"
@@ -49,11 +49,11 @@
     <fragment
         android:id="@+id/thirdScreen"
         android:name="com.example.navegacion.ThirdScreen"
-        android:label="fragment_third_screen"
-        tools:layout="@layout/fragment_third_screen" >
+        android:label="Third Screen"
+        tools:layout="@layout/fragment_third_screen">
         <argument
             android:name="origen"
-            app:argType="string"
-            android:defaultValue="desconocido" />
+            android:defaultValue="desconocido"
+            app:argType="string" />
     </fragment>
 </navigation>
